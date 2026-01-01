@@ -39,12 +39,12 @@ java {
   if (JavaVersion.current() < javaVersion) {
     toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
   }
-  archivesBaseName = "endoffset-mod"
   withSourcesJar()
 }
 
 jar {
+  archiveBaseName = "endoffset-mod"
   from("LICENSE") {
-rename { "${it}_${project.archivesBaseName}" }
+    rename { "${it}_${archiveBaseName.get()}" }
   }
 }
