@@ -11,7 +11,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Initialize Gradle
-      run: gradle wrapper --gradle-version 8.5
+      run: gradle wrapper --gradle-version 8.5 --no-daemon
     - name: Make executable
       run: chmod +x gradlew
     - name: Build
