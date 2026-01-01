@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import java.util.HashMap;
 import java.util.Map;
 
-@Mixin(targets = "net.minecraft.world.gen.feature.EndSpikeFeature")
+@Mixin(EndSpikeFeature.class)
 public class EndSpikeFeatureMixin {
 
     private static final Map<BlockPos, BlockPos> SPIKE_MAP = new HashMap<>();
@@ -31,7 +31,7 @@ public class EndSpikeFeatureMixin {
         method = "generate",
         at = @At(
             value = "INVOKE",
-            target = "Lnet/minecraft/world/gen/feature/EndSpikeFeature$Spike;setCenterPos(Lnet/minecraft/util/math/BlockPos;)V",
+            target = "Lnet/minecraft/world/gen/feature/EndSpikeFeature$Spike;setCenterPos(Lnet/minecraft/util/math/BlockPos;)V"
             ),
         index = 0
     )
