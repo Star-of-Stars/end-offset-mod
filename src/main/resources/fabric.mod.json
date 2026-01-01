@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "endoffset",
+  "version": "1.0.0",
+  "name": "End Offset",
+  "description": "Offsets End dimension structures to align with (0.5,0.5)",
+  "authors": ["YourName"],
+  "contact": {
+    "homepage": "https://github.com/Star-of-Stars/end-offset-mod",
+    "sources": "https://github.com/Star-of-Stars/end-offset-mod"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": []
+    },
+  "mixins": [
+    "endoffset.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": ">=1.20.1",
+    "java": ">=17"
+  }
+}
