@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.example.endoffset",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "EndGatewayFeatureMixin",
+    "EndSpikeFeatureMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
